@@ -1,402 +1,528 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Selenium WebDriver), Complicated Tasks & Framework Design…">
-    <meta name="author" content="Gianni Bruno">
-    <meta name="keywords" content="WebDriver University, WebDriver, Webdriver, Selenium, Selenium WebDriver, Automation Testing, Automation Testing Platform, Java, Jenkins, Cucumber, BDD, TestNG, JUNit">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Cypress), Complicated Tasks & Framework Design…"
+    />
+    <meta name="author" content="Stephen Samuels" />
+    <meta
+      name="keywords"
+      content="Cypress Testing, Automation Testing, Automation Testing Platform, Jenkins, Cucumber, BDD"
+    />
 
     <title>WebDriverUniversity.com</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async="" src="gtag/js?id=UA-228047513-1">
-        </script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="gtag/js?id=UA-228047513-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-          gtag('config', 'UA-228047513-1');
-        </script>
-</head>
+      gtag("config", "UA-228047513-1");
+    </script>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" id="nav-title" href="index.html">WebdriverUniversity.com (New Approach To Learning)</a>
-            </div>
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="nav-title" href="index.html"
+            >CypressTesting.github.io (New Approach To Learning)</a
+          >
         </div>
-        <!-- /.container -->
+      </div>
+      <!-- /.container -->
     </nav>
-
 
     <!-- Page Content -->
     <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-lg-12 text-center">
-                    <div class="thumbnail" id="udemy-promo-thumbnail">
-                        <h1 style="color:#f45950;">My Courses & Promo Codes</h1>
-                        <h3 style="font-size:140%; color: #eaff00"><b style="color: #06FF00">50%+</b> Discount Code automatically applied <u style="color: #06FF00">Valid until 12/11/2022:</u></h3>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/cypress-with-cucumber-bdd-beginner-to-expert-in-9-hours/?couponCode=4276113C4A241542309B">Cypress with Cucumber BDD - Beginner to Expert in 9 Hours!</a></p>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/selenium-webdriver-4-new-features-in-detail/?couponCode=CE483A40107FD0AE3BA7">Selenium Webdriver 4 New Features In Detail</a></p>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/mastering-locators/?couponCode=2F1861B57EB783BF039E">2022 - Mastering Selectors/ Locators for Automation Testing!</a></p>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/cypress-io-master-class/?couponCode=AED7AEE25C3BF26F4363">Cypress v11 - UI Automation Testing + API Testing + Frameworks</a></p>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/cucumber-bdd-selenium-java-complete-automation-course/?couponCode=2103A791AECAC30C7899">Selenium WebDriver 4, Cucumber BDD, Java & More! [NEW: 2022]</a></p>
-                        <p style="font-size:150%;"><a style="color: #0077ff" href="https://www.udemy.com/course/automation-testing-javascript-webdriverio-selenium-more/?couponCode=AD72492FF2B8ECFFA2C8">WebdriverIO - Selenium Webdriver using Node.js & More!</a></p>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-lg-12 text-center">
+            <div class="thumbnail" id="udemy-promo-thumbnail">
+              <h1 style="color: #f45950">Practice Cypress Testing here!</h1>
             </div>
-
-            <div class="row">
-                <div class="col-sm-12 col-lg-12 col-md-12"><a href="Contact-Us/contactus.html" target="_blank" id="contact-us">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>CONTACT US</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Contact Us Form</h4>
-                                <p>Need to perfect your Webdriver Cucumber skills? BDD also referred to as ‘Behaviour
-                                    Driven Development’ is a great way to test and simulate different user scenarios,
-                                    for example what happens if you try to use the following contact us form (Click the
-                                    button to access the challenge) to simulate user(s) inputting different types of
-                                    data or how about attempting to simulate a user submitting information to the form
-                                    using an email address in the incorrect ‘Mandatory’ format?</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-sm-12 col-lg-12 col-md-12"><a href="Login-Portal/index.html" target="_blank" id="login-portal">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>LOGIN PORTAL</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Login Portal</h4>
-                                <p>Are you really an actually user of webdriveruniversity.com? Do you really have a
-                                    valid username and password? Cucumber enables us to validate multiple sets of
-                                    username(s) and password(s) with ease by using scenarios outlines and examples! Give
-                                    the challenge a try! </p>
-                            </div>
-                        </div>
-                    </a></div>
-
-                <div class="col-md-12"><a href="Click-Buttons/index.html" target="_blank" id="button-clicks">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>BUTTON CLICKS</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>WebElement Click, JavaScript Click, Actions Move & Click!</h4>
-                                <p>Simulating various types of user click(s) can be a very tricky task within Selenium
-                                    Webdriver, there are many types of clicks available and it’s also important to learn
-                                    and test for yourselves the importance of each type of click. Why not attempt the
-                                    challenge that awaits, can you perform all the required webdriver clicks?</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="To-Do-List/index.html" target="_blank" id="to-do-list">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>TO DO LIST</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Task1 [ ] - Task2 [ ] - Task3 [ ] - Task4 [ ] - Task5 [ ]</h4>
-                                <p>Have you perfected the craft of combining multiple user actions in one? The following
-                                    ‘To Do List’ can be a tricky one! Luckily Selenium webdriver comes packed within
-                                    many types of features and libraries which can be very useful! Ready to attempt this
-                                    challenge? Can you use Selenium Webdrivers bespoke send keys method to add to the
-                                    existing list? Or even delete an existing item from the list?</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Page-Object-Model/index.html" target="_blank" id="page-object-model">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>PAGE OBJECT MODEL</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Design a robust framework which is maintainable and reusable!</h4>
-                                <p>Page object model (POM) is a fantastic design pattern which can be used to construct
-                                    the architecture of your framework(s); enabling the developer to replicate specific
-                                    pages of a given website. Pages can be modelled into unique classes (Java classes…)
-                                    in the process enabling test framework(s) to become more maintainable, flexible and
-                                    reusable. Can you use the concepts of Page Object Modelling to model the pages of
-                                    the website in this challenge? </p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Accordion/index.html" target="_blank" id="page-object-model">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>ACCORDION & TEXT AFFECTS (APPEAR & DISAPPEAR)</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Click on one of the accordion panels! Do you see any text?</h4>
-                                <p>Accordions are great way to toggle between hiding and showing large amount of
-                                    content; waiting for specific items to appear such as text can be quite tricky! I
-                                    suggest practising wait commands here!</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Dropdown-Checkboxes-RadioButtons/index.html" target="_blank" id="dropdown-checkboxes-radiobuttons">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>DROPDOWN, CHECKBOXE(S) & RADIO BUTTON(S)</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>The choice is yours!</h4>
-                                <p>Dropdown lists, check boxes and radio button are very common across websites now days
-                                    and there are a wide range of options to select from. Try to handle each of the
-                                    options listed within the challenge that awaits, it’s important to practise,
-                                    practise and practise in order to home your selenium webdriver skills.</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Ajax-Loader/index.html" target="_blank" id="ajax-loader">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>AJAX LOADER</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Wait..... for the Ajax Loader</h4>
-                                <p>Webdriver waits can be a very very tricky task to understand let alone attempt to
-                                    implement! All automation testers must perfect the craft of webdriver waits! It’s
-                                    not only important to implement the code required to practise the necessary waits,
-                                    it’s essential that you also understand the different types of waits which are
-                                    available. The following challenge will present an Ajax load screen however are you
-                                    callable of implementing webdriver wait(s) to click on the button which will appear
-                                    once the Ajax loader vanishes?</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Actions/index.html" target="_blank" id="actions">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>ACTIONS</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Can you really handle this challenge?</h4>
-                                <p>The webdriver actions class enables the developer to perform a wide range of distinct
-                                    user actions whether it’s trying to perform double click(s), click and hold(s) or
-                                    even attempting to drag and drop a specific element(s), have fun with the following
-                                    challenge! I know I would 😊</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Scrolling/index.html" target="_blank" id="scrolling-around">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>SCROLLING AROUND</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Scrolling Around...</h4>
-                                <p>Sometimes we need to scroll to a specific element on a webpage before we conduct
-                                    specific actions to that element. Let’s say the developer needs to simulate a user
-                                    click but the element is positioned at the bottom of the page? Luckily for us we can
-                                    use custom JavaScript code to scroll too specific coordinates of a page or even
-                                    scroll directly to a specific element which is in an awkward position of a website.
-                                </p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Popup-Alerts/index.html" target="_blank" id="popup-alerts">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>POPUP & ALERTS</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Close those annoying Popup & Alerts!</h4>
-                                <p>At times Popup and alerts can be quite annoying especially when they can impact the
-                                    results of your automation test scripts. There are various types of popups and
-                                    alerts which are present such as ‘JavaScript’ alerts or even ‘Modal’ popups. Once
-                                    you understand the way to handle such popups and alerts the process can be straight
-                                    forward! provided you keep practising 😊</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="IFrame/index.html" target="_blank" id="iframe">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>IFRAME</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Practise with inline frame(s)</h4>
-                                <p>An inline frame is used to embed another document within the current HTML document,
-                                    if the developer has no knowledge of ‘IFrame(s)’ or doesn’t know how to handle them
-                                    correctly it can be quite frustrating. To handle IFrames we need to use bespoke code
-                                    which in turn will enable the developer to toggle between the main HTML page and the
-                                    IFrame itself. Practise makes perfect, attempt the challenge for yourself, it fairly
-                                    easy once you get the hang of it.</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-
-                <div class="col-md-12"><a href="Hidden-Elements/index.html" target="_blank" id="hidden-elements">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>HIDDEN ELEMENTS</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Practise with inline frame(s)</h4>
-                                <p>An inline frame is used to embed another document within the current HTML document,
-                                    if the developer has no knowledge of ‘IFrame(s)’ or doesn’t know how to handle them
-                                    correctly it can be quite frustrating. To handle IFrames we need to use bespoke code
-                                    which in turn will enable the developer to toggle between the main HTML page and the
-                                    IFrame itself. Practise makes perfect, attempt the challenge for yourself, it fairly
-                                    easy once you get the hang of it.</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-                <div class="col-md-12"><a href="Data-Table/index.html" target="_blank" id="data-table">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>DATA, TABLES & BUTTON STATES</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Can you extract data to an Excel file?</h4>
-                                <p>Sometimes we may need to read or even write data from a website to an external file
-                                    such as an Excel file / sheet. Apache POI is an open source piece of kit which comes
-                                    bundled with Java libraries enabling the developer to more effortlessly read or
-                                    write data from external sources. Experiment with the data tables, can you capture
-                                    data from one of the tables and in turn write that data to an excel sheet?</p>
-                            </div>
-                        </div>
-                    </a></div>
-
-                <div class="col-md-12"><a href="Autocomplete-TextField/autocomplete-textfield.html" target="_blank" id="autocomplete-textfield">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>AUTOCOMPLETE TEXTFIELD</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Searching for something specific?</h4>
-                                <p>Often we are uncertain of what we are searching for! Using the enlisted suggested
-                                    search textfield, you will be able to search for a specific product, based upon your
-                                    search query.<br>
-                                    For example:
-                                    <ul>
-                                        <li>
-                                            <p>Apple</p>
-                                        </li>
-                                        <li>
-                                            <p>Avocado</p>
-                                        </li>
-                                    </ul>
-                                
-                            </div>
-                        </div>
-                    </a></div>
-
-                <div class="col-md-12"><a href="File-Upload/index.html" target="_blank" id="file-upload">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>FILE UPLOAD</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Need to upload a specific file?</h4>
-                                <p>Perform the following actions to practise your file uploading skills:
-                                    <ul>
-                                        <li>
-                                            <p>Choose a file.</p>
-                                        </li>
-                                        <li>
-                                            <p>Click on the 'Submit' button.</p>
-                                        </li>
-                                    </ul>
-                                
-                            </div>
-                        </div>
-                    </a></div>
-
-                <div class="col-md-12"><a href="Datepicker/index.html" target="_blank" id="datepicker">
-                        <div class="thumbnail">
-                            <div class="section-title">
-                                <h1>DATEPICKER</h1>
-                            </div>
-                            <div class="caption">
-                                <h4>Datepicker</h4>
-                                <p>What date will you select?
-                                    <ul>
-                                        <li>
-                                            <p>Select a day.</p>
-                                        </li>
-                                        <li>
-                                            <p>Select a Month.</p>
-                                        </li>
-                                        <li>
-                                            <p>Select a Year.</p>
-                                        </li>
-                                    </ul>
-                                
-                            </div>
-                        </div>
-                    </a></div>
-            </div>
-
+          </div>
         </div>
 
+        <div class="row">
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <a href="Contact-Us/contactus.html" target="_blank" id="contact-us">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>CONTACT US</h1>
+                </div>
+                <div class="caption">
+                  <h4>Contact Us Form</h4>
+                  <p>
+                    Need to perfect your Cypress Cucumber skills? BDD also
+                    referred to as ‘Behaviour Driven Development’ is a great way
+                    to test and simulate different user scenarios, for example
+                    what happens if you try to use the following contact us form
+                    (Click the button to access the challenge) to simulate
+                    user(s) inputting different types of data or how about
+                    attempting to simulate a user submitting information to the
+                    form using an email address in the incorrect ‘Mandatory’
+                    format?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-lg-12 col-md-12">
+            <a href="Login-Portal/index.html" target="_blank" id="login-portal">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>LOGIN PORTAL</h1>
+                </div>
+                <div class="caption">
+                  <h4>Login Portal</h4>
+                  <p>
+                    Are you really an actual user of CypressTesting.github.io?
+                    Do you really have a valid username and password? Cucumber
+                    enables us to validate multiple sets of username(s) and
+                    password(s) with ease by using scenarios outlines and
+                    examples! Give the challenge a try!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Click-Buttons/index.html"
+              target="_blank"
+              id="button-clicks"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>BUTTON CLICKS</h1>
+                </div>
+                <div class="caption">
+                  <h4>
+                    WebElement Click, JavaScript Click, Actions Move & Click!
+                  </h4>
+                  <p>
+                    Simulating various types of user click(s) can be a very
+                    tricky task, there are many types of clicks available and
+                    it’s also important to learn and test for yourselves the
+                    importance of each type of click. Why not attempt the
+                    challenge that awaits, can you perform all the required
+                    clicks?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="To-Do-List/index.html" target="_blank" id="to-do-list">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>TO DO LIST</h1>
+                </div>
+                <div class="caption">
+                  <h4>
+                    Task1 [ ] - Task2 [ ] - Task3 [ ] - Task4 [ ] - Task5 [ ]
+                  </h4>
+                  <p>
+                    Have you perfected the craft of combining multiple user
+                    actions in one? The following ‘To Do List’ can be a tricky
+                    one! Luckily Cypress comes packed within many types of
+                    features and libraries which can be very useful! Ready to
+                    attempt this challenge? Can you add to the existing list? Or
+                    even delete an existing item from the list?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Page-Object-Model/index.html"
+              target="_blank"
+              id="page-object-model"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>PAGE OBJECT MODEL</h1>
+                </div>
+                <div class="caption">
+                  <h4>
+                    Design a robust framework which is maintainable and
+                    reusable!
+                  </h4>
+                  <p>
+                    Page object model (POM) is a fantastic design pattern which
+                    can be used to construct the architecture of your
+                    framework(s); enabling the developer to replicate specific
+                    pages of a given website. Pages can be modelled into unique
+                    classes (Java classes…) in the process enabling test
+                    framework(s) to become more maintainable, flexible and
+                    reusable. Can you use the concepts of Page Object Modelling
+                    to model the pages of the website in this challenge?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Accordion/index.html"
+              target="_blank"
+              id="page-object-model"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>ACCORDION & TEXT AFFECTS (APPEAR & DISAPPEAR)</h1>
+                </div>
+                <div class="caption">
+                  <h4>
+                    Click on one of the accordion panels! Do you see any text?
+                  </h4>
+                  <p>
+                    Accordions are great way to toggle between hiding and
+                    showing large amount of content; waiting for specific items
+                    to appear such as text can be quite tricky! I suggest
+                    practising wait commands here!
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Dropdown-Checkboxes-RadioButtons/index.html"
+              target="_blank"
+              id="dropdown-checkboxes-radiobuttons"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>DROPDOWN, CHECKBOXE(S) & RADIO BUTTON(S)</h1>
+                </div>
+                <div class="caption">
+                  <h4>The choice is yours!</h4>
+                  <p>
+                    Dropdown lists, check boxes and radio button are very common
+                    across websites now days and there are a wide range of
+                    options to select from. Try to handle each of the options
+                    listed within the challenge that awaits, it’s important to
+                    practise, practise and practise in order to home your
+                    Cypress skills.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="Ajax-Loader/index.html" target="_blank" id="ajax-loader">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>AJAX LOADER</h1>
+                </div>
+                <div class="caption">
+                  <h4>Wait..... for the Ajax Loader</h4>
+                  <p>
+                    Waits can be a very very tricky task to understand let alone
+                    attempt to implement! All automation testers must perfect
+                    the craft of webdriver waits! It’s not only important to
+                    implement the code required to practise the necessary waits,
+                    it’s essential that you also understand the different types
+                    of waits which are available. The following challenge will
+                    present an Ajax load screen however are you callable of
+                    implementing webdriver wait(s) to click on the button which
+                    will appear once the Ajax loader vanishes?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="Actions/index.html" target="_blank" id="actions">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>ACTIONS</h1>
+                </div>
+                <div class="caption">
+                  <h4>Can you really handle this challenge?</h4>
+                  <p>
+                    The actions class enables the developer to perform a wide
+                    range of distinct user actions whether it’s trying to
+                    perform double click(s), click and hold(s) or even
+                    attempting to drag and drop a specific element(s), have fun
+                    with the following challenge! I know I would 😊
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Scrolling/index.html"
+              target="_blank"
+              id="scrolling-around"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>SCROLLING AROUND</h1>
+                </div>
+                <div class="caption">
+                  <h4>Scrolling Around...</h4>
+                  <p>
+                    Sometimes we need to scroll to a specific element on a
+                    webpage before we conduct specific actions to that element.
+                    Let’s say the developer needs to simulate a user click but
+                    the element is positioned at the bottom of the page? Luckily
+                    for us we can use custom JavaScript code to scroll too
+                    specific coordinates of a page or even scroll directly to a
+                    specific element which is in an awkward position of a
+                    website.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="Popup-Alerts/index.html" target="_blank" id="popup-alerts">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>POPUP & ALERTS</h1>
+                </div>
+                <div class="caption">
+                  <h4>Close those annoying Popup & Alerts!</h4>
+                  <p>
+                    At times Popup and alerts can be quite annoying especially
+                    when they can impact the results of your automation test
+                    scripts. There are various types of popups and alerts which
+                    are present such as ‘JavaScript’ alerts or even ‘Modal’
+                    popups. Once you understand the way to handle such popups
+                    and alerts the process can be straight forward! provided you
+                    keep practising 😊
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="IFrame/index.html" target="_blank" id="iframe">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>IFRAME</h1>
+                </div>
+                <div class="caption">
+                  <h4>Practise with inline frame(s)</h4>
+                  <p>
+                    An inline frame is used to embed another document within the
+                    current HTML document, if the developer has no knowledge of
+                    ‘IFrame(s)’ or doesn’t know how to handle them correctly it
+                    can be quite frustrating. To handle IFrames we need to use
+                    bespoke code which in turn will enable the developer to
+                    toggle between the main HTML page and the IFrame itself.
+                    Practise makes perfect, attempt the challenge for yourself,
+                    it fairly easy once you get the hang of it.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Hidden-Elements/index.html"
+              target="_blank"
+              id="hidden-elements"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>HIDDEN ELEMENTS</h1>
+                </div>
+                <div class="caption">
+                  <h4>Practise with inline frame(s)</h4>
+                  <p>
+                    An inline frame is used to embed another document within the
+                    current HTML document, if the developer has no knowledge of
+                    ‘IFrame(s)’ or doesn’t know how to handle them correctly it
+                    can be quite frustrating. To handle IFrames we need to use
+                    bespoke code which in turn will enable the developer to
+                    toggle between the main HTML page and the IFrame itself.
+                    Practise makes perfect, attempt the challenge for yourself,
+                    it fairly easy once you get the hang of it.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="Data-Table/index.html" target="_blank" id="data-table">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>DATA, TABLES & BUTTON STATES</h1>
+                </div>
+                <div class="caption">
+                  <h4>Can you extract data to an Excel file?</h4>
+                  <p>
+                    Sometimes we may need to read or even write data from a
+                    website to an external file such as an Excel file / sheet.
+                    Apache POI is an open source piece of kit which comes
+                    bundled with Java libraries enabling the developer to more
+                    effortlessly read or write data from external sources.
+                    Experiment with the data tables, can you capture data from
+                    one of the tables and in turn write that data to an excel
+                    sheet?
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a
+              href="Autocomplete-TextField/autocomplete-textfield.html"
+              target="_blank"
+              id="autocomplete-textfield"
+            >
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>AUTOCOMPLETE TEXTFIELD</h1>
+                </div>
+                <div class="caption">
+                  <h4>Searching for something specific?</h4>
+                  <p>
+                    Often we are uncertain of what we are searching for! Using
+                    the enlisted suggested search textfield, you will be able to
+                    search for a specific product, based upon your search
+                    query.<br />
+                    For example:
+                  </p>
+
+                  <ul>
+                    <li>
+                      <p>Apple</p>
+                    </li>
+                    <li>
+                      <p>Avocado</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="File-Upload/index.html" target="_blank" id="file-upload">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>FILE UPLOAD</h1>
+                </div>
+                <div class="caption">
+                  <h4>Need to upload a specific file?</h4>
+                  <p>
+                    Perform the following actions to practise your file
+                    uploading skills:
+                  </p>
+                  <ul>
+                    <li>
+                      <p>Choose a file.</p>
+                    </li>
+                    <li>
+                      <p>Click on the 'Submit' button.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-12">
+            <a href="Datepicker/index.html" target="_blank" id="datepicker">
+              <div class="thumbnail">
+                <div class="section-title">
+                  <h1>DATEPICKER</h1>
+                </div>
+                <div class="caption">
+                  <h4>Datepicker</h4>
+                  <p>What date will you select?</p>
+                  <ul>
+                    <li>
+                      <p>Select a day.</p>
+                    </li>
+                    <li>
+                      <p>Select a Month.</p>
+                    </li>
+                    <li>
+                      <p>Select a Year.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- /.container -->
 
     <div class="container" id="nav-container">
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; www.GianniBruno.com | <a href="https://automationteststore.com/" id="automation-test-store" target="_blank">Automationteststore</a></p>
-                </div>
-            </div>
-        </footer>
-
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>
+              Copyright &copy; https://stevenjoseph19.github.io/ |
+              <a
+                href="https://automationteststore.com/"
+                id="automation-test-store"
+                target="_blank"
+                >Automationteststore</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- /.container -->
 
@@ -405,7 +531,5 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-</body>
-
+  </body>
 </html>
