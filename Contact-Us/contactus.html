@@ -1,113 +1,180 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Free Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Selenium WebDriver), Complicated Tasks & Framework Design…">
-    <meta name="author" content="Gianni Bruno">
-    <meta name="keywords" content="WebDriver University, WebDriver, Webdriver, Selenium, Selenium WebDriver, Automation Testing, Automation Testing Platform, Java, Jenkins, Cucumber, BDD, TestNG, JUNit">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Free Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Selenium WebDriver), Complicated Tasks & Framework Design…"
+    />
+    <meta name="author" content="Gianni Bruno" />
+    <meta
+      name="keywords"
+      content="WebDriver University, WebDriver, Webdriver, Selenium, Selenium WebDriver, Automation Testing, Automation Testing Platform, Java, Jenkins, Cucumber, BDD, TestNG, JUNit"
+    />
 
-  <title>WebDriver | Contact Us</title>
+    <title>WebDriver | Contact Us</title>
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
 
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async="" src="../gtag/js?id=UA-228047513-1">
-          </script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="../gtag/js?id=UA-228047513-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'UA-228047513-1');
-          </script>
+      gtag("config", "UA-228047513-1");
+    </script>
+    <script>
+      function checkValidity() {
+        var first_name = document.forms.ContactForm.first_name.value;
+        var last_name = document.forms.ContactForm.last_name.value;
+        var email = document.forms.ContactForm.email.value;
 
-      </head>
+        var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g; //Javascript reGex for Email Validation.
+        var regName = /\d+$/g; // Javascript reGex for Name validation
 
-      <body>
-	      <!-- Navigation -->
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" id="nav-title" href="../index.html">WebdriverUniversity.com (New Approach To Learning)</a>
-				</div>
-			</div>
-			<!-- /.container -->
-		</nav> 
-	  
-	  
-        <!-- Page Content -->
-        <div class="container">
+        if (first_name == "" || regName.test(first_name)) {
+          window.alert("Please enter your first name properly.");
+          first_name.focus();
+          return false;
+        }
 
-          <div class="row">
-            <div class="col-md-12">
+        if (last_name == "" || regName.test(last_name)) {
+          window.alert("Please enter your last name properly.");
+          last_name.focus();
+          return false;
+        }
 
-              <section id="contact_me">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-12 text-center">
-                      <h2 name="contactme" class="section_header">CONTACT US</h2><br>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <form action="contact_us.php" method="post" id="contact_form">
-                      <input name="first_name" type="text" class="feedback-input" placeholder="First Name">  
-                      <input name="last_name" type="text" class="feedback-input" placeholder="Last Name">   
-                      <input name="email" type="text" class="feedback-input" placeholder="Email Address">
-                      <textarea name="message" class="feedback-input" placeholder="Comments"></textarea><br>
-                      <div id="form_buttons" class="text-center">
-                        <input class="contact_button" type="reset" value="RESET">
-                        <input class="contact_button" type="submit" value="SUBMIT">
-                      </div>
-                    </form>
-                  </div>
-                  </div>
-              </section>
-            </div>
-          </div>
+        if (email == "" || !regEmail.test(email)) {
+          window.alert("Please enter a valid e-mail address.");
+          email.focus();
+          return false;
+        }
 
+        window.alert("Thank You For Your Message!");
+        return true;
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="nav-title" href="../index.html"
+            >CypressTesting.github.io (New Approach To Learning)</a
+          >
         </div>
-
-      
-      <!-- /.container -->
-
-      <div class="container" id="nav-container">
-        <!-- Footer -->
-        <footer>
-          <div class="row">
-            <div class="col-lg-12">
-              <p>Copyright &copy; www.GianniBruno.com</p>
-            </div>
-          </div>
-        </footer>
-
       </div>
       <!-- /.container -->
+    </nav>
 
-      <!-- jQuery -->
-      <script src="js/jquery.js"></script>
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <section id="contact_me">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 name="contactme" class="section_header">CONTACT US</h2>
+                  <br />
+                </div>
+              </div>
+              <div class="row">
+                <form
+                  name="ContactForm"
+                  onsubmit="return checkValidity()"
+                  method="post"
+                  id="contact_form"
+                >
+                  <input
+                    name="first_name"
+                    type="text"
+                    class="feedback-input"
+                    placeholder="First Name"
+                  />
+                  <input
+                    name="last_name"
+                    type="text"
+                    class="feedback-input"
+                    placeholder="Last Name"
+                  />
+                  <input
+                    name="email"
+                    type="text"
+                    class="feedback-input"
+                    placeholder="Email Address"
+                  />
+                  <textarea
+                    name="message"
+                    class="feedback-input"
+                    placeholder="Comments"
+                  ></textarea
+                  ><br />
+                  <div id="form_buttons" class="text-center">
+                    <input class="contact_button" type="reset" value="RESET" />
+                    <input
+                      class="contact_button"
+                      type="submit"
+                      value="SUBMIT"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
 
-      <!-- Bootstrap Core JavaScript -->
-      <script src="js/bootstrap.min.js"></script>
+    <!-- /.container -->
 
-    </body>
-    </html>
+    <div class="container" id="nav-container">
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; https://stevenjoseph19.github.io/</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
