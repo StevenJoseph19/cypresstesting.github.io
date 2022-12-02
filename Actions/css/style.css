@@ -1,0 +1,371 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #1d1d1d;
+}
+
+#draggable { width: 150px; height: 150px; padding: 1em; background-color: #E6E6E6; border-style: solid;border-width: 10px;}
+
+#droppable { width: 400px; max-width: 400px; min-width: 400px; height: 270px; min-height: 270px; max-height: 270px; padding: 1em; background-color: #616DB3; border-style: solid;border-width: 10px;}
+
+.ui-state-highlight {
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+
+}
+
+#droppable p {
+    font-size: 80px;
+}
+
+#div-drag-drop-thumbnail {
+    height: 300px;
+    max-height: 300px;
+    background-color: #3B3C45;
+}
+
+h1 {
+    color: #F45950;
+    padding-bottom: 10px;
+}
+
+#main-header {
+    font-size: 30px;
+    color: #F45950;
+    padding-bottom: 20px;
+}
+
+/** Double click -**/
+.div-double-click {
+    background-color: #FEC42D;
+    color: white;
+    height: 86%;
+    width: 100%;
+    border-style: solid;
+    border-width: 10px; 
+    border-color: #333333;
+    margin-top: 20px;
+}
+
+.div-double-click h2 {
+    font-size: 60px;
+    font-style: bold;
+    color: black;
+    font-family: Verdana, Georgia, Serif;
+    margin-top: -20px;
+}
+
+.double {
+    background-color: #93CB5A;
+    color: black;
+}
+
+.div-double-click h2 {
+    padding-top: 100px;
+}
+
+/*********************/
+
+
+/** Hover Menu **/
+#div-hover {
+    height: 110px;
+    max-height: 110px;
+    background-color: #3B3C45;
+}
+
+.dropbtn {
+    background-color: #E6E6E6;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    border-style: solid;border-width: 2px;
+
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #D6D6D6}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #4A4955;
+    color: white;
+}
+
+#menu {
+    background-color: white;
+    height: 50px;
+}
+
+#menu li {
+    background-color: white;
+}
+
+#menu li a{
+    background-color: white;
+}
+
+.navbar {
+    background-color: #f45950;
+    border-bottom: 4px solid #e62c21;
+}
+
+#nav-title {
+    color: #a60900;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nav-home {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 755px;
+    width: 92px;
+    background-color:#e62c21;
+    color: #A60900;
+}
+
+a:hover {
+    color: #2aa2c4;
+}
+
+ol {
+    color: #d5dae2;
+    font-size: 20px;
+}
+
+.caption {
+    height: 70px;
+    overflow: hidden;
+}
+
+.section-title{
+    height: 150px;
+    width: 100%;
+    max-height: 150px;
+    min-width: 100%;
+    background-color: #464651;
+}
+
+.section-title h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    color: #f45950;
+}
+
+.thumbnail {
+    padding: 0;
+    background-color: #3b3c45;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #616db3;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    display: none;
+    background-color: yellow;
+}
+
+footer {
+    margin: 0 auto;
+    height: 60px;
+}
+
+footer p{
+    padding-top: 10px;
+    color: #333333;
+}
+
+#click-box {
+    height: 100px;
+    background-color: black;
+    border-style: solid;border-width: 10px; border-color: #333333;
+}
+
+#click-box p {
+    font-size: 30px;
+    font-style: bold;
+    color: white;
+    padding-top: 10px;
+}
+
+#hover-box {
+    height: 40px;
+    background-color: green;
+}
+
+@media only screen and (min-width : 0px) {
+    #nav-title {
+        font-size: 10px;
+    }
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    #nav-title {
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    #nav-title {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width : 580px) {
+}
+
+
+@media only screen and (min-width : 650px) {
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) { 
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #droppable p {
+    font-size: 32px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #div-drag-drop-thumbnail {
+    height: 350px;
+    max-height: 350px;
+}
+
+#div-hover {
+    height: 130px;
+    max-height: 130px;
+}
+
+#droppable {
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+#div-drag-drop-thumbnail {
+    height: 400px;
+    max-height: 400px;
+}
+
+#div-hover {
+    height: 190px;
+    max-height: 190px;
+}
+
+#droppable {
+    height: 180px;
+    max-height: 180px;
+    min-height: 180px;
+
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+#droppable p {
+    font-size: 18px;
+}
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+#div-drag-drop-thumbnail {
+    height: 400px;
+    max-height: 400px;
+}
+
+#div-hover {
+    height: 190px;
+    max-height: 190px;
+}
+
+#droppable {
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+#droppable p {
+    font-size: 14px;
+}
+
+.ui-state-highlight {
+}
+
+}

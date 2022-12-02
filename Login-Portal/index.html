@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Free Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Selenium WebDriver), Complicated Tasks & Framework Design…">
+   <meta name="author" content="Gianni Bruno">
+   <meta name="keywords" content="WebDriver University, WebDriver, Webdriver, Selenium, Selenium WebDriver, Automation Testing, Automation Testing Platform, Java, Jenkins, Cucumber, BDD, TestNG, JUNit">
+  <title>WebDriver | Login Portal</title>
+  <script src='../jquery-3.6.0.min.js'></script>
+  <script src="js/index.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript">
+		function validate()
+		{
+			if(   document.getElementById("text").value == "webdriver"
+			   && document.getElementById("password").value == "webdriver123" 
+			   || document.getElementById("text").value == "webdriver2"
+			   && document.getElementById("password").value == "webdriver321")
+			{
+				alert( "validation succeeded" );
+				location.href="run.html";
+			}
+			else
+			{
+				alert( "validation failed" );
+				location.href="fail.html";
+			}
+		}
+		</script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="../gtag/js?id=UA-228047513-1">
+		</script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-228047513-1');
+		</script>
+		
+</head>
+
+<body>
+  <div class="wrapper">
+	<div class="container">
+		<form class="form">
+			<input type="text" id="text" placeholder="Username">
+			<input type="password" id="password" placeholder="Password">
+			<button type="submit" id="login-button" onclick="javascript:validate()">Login</button>
+		</form>
+	</div>
+	
+	<ul class="bg-bubbles">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</body>
+</html>

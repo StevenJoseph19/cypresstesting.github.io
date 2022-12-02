@@ -1,0 +1,528 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #1d1d1d;
+}
+
+.navbar {
+    background-color: #f45950;
+    border-bottom: 4px solid #e62c21;
+}
+
+#nav-title {
+    color: #a60900;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nav-home {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 755px;
+    width: 92px;
+    background-color:#e62c21;
+    color: #A60900;
+}
+
+a:hover {
+    color: #2aa2c4;
+}
+
+iframe {
+    margin-top: 0px;
+    width: 105%;
+    height: 550px;
+    margin-left: -30px;
+}
+
+#udemy-promo-code{
+    padding: 0;
+    height: 254px;
+    width: 100%;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+#carousel-example-generic {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e62c21;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    max-height: 200px;
+    min-height: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: wrap;
+    text-align: left;
+    font-weight: bold;
+    text-decoration: none;
+    color: #DDDDDD;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.section-title{
+    height: 100px;
+    width: 100%;
+    max-height: 100px;
+    min-width: 100%;
+    background-color: #464651;
+}
+
+.section-title h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    color: #f45950;
+    font-size: 24px;
+}
+
+.thumbnail {
+    padding: 0;
+    background-color: #3b3c45;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #616db3;
+    height: 260px;
+}
+
+#udemy-promo-thumbnail, #udemy-promo-code-thumbnail {
+    background-color: black;
+    border-color: #e62c21;
+    height: 830px;
+}
+
+.thumbnail p {
+    color: #ADADAD;
+    text-decoration: none;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    display: none;
+}
+
+footer {
+    margin: 0 auto;
+    height: 60px;
+}
+
+footer p{
+    padding-top: 10px;
+    color: #333333;
+}
+
+
+    @media only screen and (min-width : 0px) {
+        #nav-title {
+            font-size: 10px;
+        }
+
+        .slide-image {
+            max-height: 200px;
+            height: 200px;
+            min-height: 200px;
+        }
+
+        .thumbnail {
+            height: 550px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 550px;
+           min-height: 550px;
+        }
+
+        #udemy-promo-code-thumbnail {
+           height: 750px;
+        }
+
+        #udemy-promo-code {
+            height: 240px;
+        }
+
+        /*FIREFOX STYLING*/
+        @-moz-document url-prefix() {
+        .thumbnail {
+            height: 470px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 470px;
+           min-height: 470px;
+        }
+
+        #udemy-promo-thumbnail {
+            height: 400px;
+        }
+
+        #udemy-promo-video{
+            height: 194px;
+        }
+    }
+
+   /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        #udemy-promo-code-thumbnail {
+           height: 800px;
+           min-height: 800px;
+        }
+
+        #udemy-promo-code {
+           height: 800px;
+           min-height: 800px;
+        }
+
+        #nav-title {
+            font-size: 12px;
+        }
+
+        .thumbnail {
+            height: 450px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 450px;
+           min-height: 450px;
+        }
+
+        /*FIREFOX STYLING*/
+        @-moz-document url-prefix() {
+        .thumbnail {
+            height: 450px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 450px;
+           min-height: 450px;
+        }
+
+        #udemy-promo-thumbnail {
+           height: 500px;
+        }
+        #udemy-promo-video{
+           height: 500px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+        .slide-image {
+            max-height: 222px;
+            height: 222px;
+            min-height: 222px;
+        }
+
+        #slide-image-1 {
+            max-height: 222px;
+            max-width: 800px;
+            height: 222px;
+            width: 800px;
+            margin-left: -150px;
+        }
+
+        #nav-title {
+            font-size: 14px;
+        }
+
+        .thumbnail {
+            height: 330px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 450px;
+           min-height: 450px;
+        }
+
+        #udemy-promo-code-thumbnail {
+            height: 240px;
+        }
+
+        #udemy-promo-code {
+            height: 230px;
+        }
+
+        /*FIREFOX STYLING*/
+        @-moz-document url-prefix() {
+        .thumbnail {
+            height: 330px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 330px;
+           min-height: 330px;
+        }
+
+        #udemy-promo-thumbnail {
+           height: 500px;
+        }
+        #udemy-promo-video{
+           height: 500px;
+        }
+    }
+
+    @media only screen and (min-width : 580px) {
+         #slide-image-1 {
+            margin-left: -100px;
+        }
+
+        .thumbnail {
+            height: 300px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 300px;
+           min-height: 300px;
+        }
+
+        #udemy-promo-code-thumbnail {
+           height: 500px;
+        }
+
+        #udemy-promo-code {
+           height: 500px;
+        }
+
+        /*FIREFOX STYLING*/
+        @-moz-document url-prefix() {
+        .thumbnail {
+            height: 290px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 290px;
+           min-height: 290px;
+        }
+
+        #udemy-promo-thumbnail {
+           height: 500px;
+        }
+        #udemy-promo-video{
+           height: 500px;
+        }
+    }
+
+
+    @media only screen and (min-width : 650px) {
+         #slide-image-1 {
+            margin-left: -70px;
+        }
+
+        .thumbnail {
+            height: 280px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 280px;
+           min-height: 280px;
+        }
+
+        /*FIREFOX STYLING*/
+        @-moz-document url-prefix() {
+        .thumbnail {
+            height: 275px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 275px;
+           min-height: 275px;
+        }
+
+        #udemy-promo-thumbnail {
+           height: 500px;
+        }
+        #udemy-promo-video{
+           height: 500px;
+        }
+    }
+
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        #slide-image-1 {
+            max-height: 268px;
+            max-width: 800px;
+            height: 268px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        #slide-image-2, #slide-image-3, #slide-image-4, #slide-image-5, #slide-image-6 {
+            max-height: 268px;
+            height: 268px;
+        }
+
+        #udemy-promo-thumbnail {
+           height: 500px;
+        }
+        #udemy-promo-video{
+            height: 500px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        #slide-image-1 {
+            max-height: 350px;
+            max-width: 800px;
+            height: 350px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        #slide-image-2, #slide-image-3, #slide-image-4, #slide-image-5, #slide-image-6 {
+            max-height: 350px;
+            height: 350px;
+        }
+
+        #udemy-promo-code-thumbnail {
+            height: 550px;
+        }
+
+        #udemy-promo-code {
+            height: 550px;
+        }
+
+        #udemy-promo-thumbnail {
+            height: 550px;
+        }
+        #udemy-promo-video{
+            height: 550px;
+        }
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) { 
+        #slide-image-1 {
+            max-height: 425px;
+            max-width: 800px;
+            height: 425px;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+
+        #slide-image-2, #slide-image-3, #slide-image-4, #slide-image-5, #slide-image-6 {
+            max-height: 425px;
+            height: 425px;
+        }
+
+
+        .thumbnail {
+            height: 260px;
+        }
+
+        .thumbnail p {
+            margin-top: 10px;
+        }
+
+        .caption {
+           height: 260px;
+           min-height: 260px;
+        }
+
+        #udemy-promo-code-thumbnail {
+            height: 600px;
+        }
+
+        #udemy-promo-code {
+            height: 600px;
+        }
+
+        #udemy-promo-thumbnail {
+            height: 360px;
+        }
+        #udemy-promo-video{
+            height: 600px;
+        }
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

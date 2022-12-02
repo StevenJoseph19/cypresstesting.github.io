@@ -1,0 +1,209 @@
+﻿  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free Online (Interaction) Training Platform. Enhance yours skills within Automation Testing (Selenium WebDriver), Complicated Tasks & Framework Design…">
+    <meta name="author" content="Gianni Bruno">
+    <meta name="keywords" content="WebDriver University, WebDriver, Webdriver, Selenium, Selenium WebDriver, Automation Testing, Automation Testing Platform, Java, Jenkins, Cucumber, BDD, TestNG, JUNit">
+
+    <title>Hidden Elements</title>
+
+      <!-- Bootstrap Core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/style.css" rel="stylesheet">
+
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.js"></script>
+
+     <style type="text/css">
+      .thumbnail {
+        height: 150px;
+      }
+
+      .section-title{
+        height: 70px;
+      }
+       #not-displayed {
+            display: none;
+       }
+       #visibility-hidden {
+            visibility: hidden;
+       }
+       #zero-opacity {
+        opacity: 0;
+       }
+     </style>
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async="" src="../gtag/js?id=UA-228047513-1">
+     </script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+
+       gtag('config', 'UA-228047513-1');
+     </script>
+     
+   </head>
+
+      <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+             <a class="navbar-brand" id="nav-title" href="../index.html">WebdriverUniversity.com (Hidden Elements)</a>
+            </div>
+          </div>
+          <!-- /.container -->
+        </nav> 
+
+
+        <!-- Page Content -->
+        <div class="container">
+
+         <!-- Page Header -->
+          <div class="row">
+            <div class="col-lg-12 text-center" id="main-header">
+              <h1>Hidden Elements..</h1><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="row">
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                  <div class="thumbnail">
+                    <h2>Not Displayed</h2>
+                    <div class="section-title" id="not-displayed">
+                         <span class="btn btn-default btn-lg dropdown-toggle" type="button" id="button1" data-toggle="modal" data-target="#myModalClick"><p>CLICK ME!</p></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                  <div class="thumbnail">
+                    <h2>Visibility Hidden</h2>
+                    <div class="section-title" id="visibility-hidden">
+                         <span class="btn btn-default btn-lg dropdown-toggle" type="button" id="button2" data-toggle="modal" data-target="#myModalJSClick">CLICK ME!!</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-lg-4 col-md-4">
+                  <div class="thumbnail">
+                   <h2>Zero Opacity</h2>
+                   <div class="section-title" id="zero-opacity">
+                       <span class="btn btn-default btn-lg dropdown-toggle" type="button" id="button3" data-toggle="modal" data-target="#myModalMoveClick">CLICK ME!!!</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /.container -->
+
+          <!-- Footer -->
+          <footer>
+            <div class="row">
+              <div class="col-sm-12">
+                <p>Copyright &copy; www.GianniBruno.com</p>
+              </div>
+            </div>
+          </footer>
+
+
+        <div id="dialog" style="display: none" align="center">
+          This is a jQuery Dialog.
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModalClick" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Congratulations!</h4>
+             </div>
+             <div class="modal-body">
+              <p>Well done for successfully using the <b>click()</b> method!</p>
+            </div>
+            <div class="modal-footer">
+             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Modal -->
+     <div class="modal fade" id="myModalJSClick" role="dialog">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">It’s that Easy!!  Well I think it is.....</h4>
+          </div>
+          <div class="modal-body">
+            <p>We can use JavaScript code if all else fails! Remember always try to use the WebDriver Library method(s) first such as WebElement.<b>click().</b><i> (The Selenium development team have spent allot of time developing WebDriver functions etc).</i></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModalMoveClick" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Well done! the <b>Action Move & Click</b> can become very useful!</h4>
+          </div>
+          <div class="modal-body">
+            <p>Advanced user interactions (API) has been developed to enable you to perform more complex interactions such as:</p>
+            <ul>
+              <li>Drag & Drop</li>
+              <li>Hover & Click</li>
+              <li>Click & Hold....</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../tether%401.2.4/dist/js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</div></body>
+</html>

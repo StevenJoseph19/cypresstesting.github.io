@@ -1,0 +1,256 @@
+/*!
+ * Start Bootstrap - Shop Homepage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #1d1d1d;
+}
+
+.navbar {
+    background-color: #f45950;
+    border-bottom: 4px solid #e62c21;
+}
+
+#nav-title {
+    color: #a60900;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#nav-home {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-left: 755px;
+    width: 92px;
+    background-color:#e62c21;
+    color: #A60900;
+}
+
+a:hover {
+    color: #2aa2c4;
+}
+
+#main-header {
+    color: #d5dae2;
+}
+
+ol {
+    color: #d5dae2;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: #F45950;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #F45950;
+    padding: 10px;
+}
+
+.section-title h1 {
+    font-size: 18px;
+    margin-top: -10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+#carousel-example-generic {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #e62c21;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 70px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: wrap;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.section-title{
+    height: 170px;
+    width: 100%;
+    max-height: 170px;
+    min-width: 100%;
+    background-color: #464651;
+}
+
+.section-title h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    color: #f45950;
+}
+
+.thumbnail {
+    padding: 0;
+    background-color: #3b3c45;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #616db3;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    display: none;
+}
+
+footer {
+    margin: 0 auto;
+    height: 60px;
+}
+
+footer p{
+    padding-top: 10px;
+    color: #333333;
+}
+
+
+/**buttons**/
+#div-dropdown-menu {
+    height: 222px;
+    min-height: 222px;
+    max-height: 222px;
+}
+
+/**Dropdown 1 **/
+.dropdown-menu-lists {
+    width: 60%;
+    height: 20%;
+    margin: 0 20%;
+    background-color: #E6E6E6;
+    color: black;
+    margin-bottom: 5%;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.dropdown-menu-lists option {
+    color: black;
+    font-size: 16px;
+}
+
+/**check box's **/
+label, input {
+    font-size: 18px;
+    margin: 0 20%;
+    color: #f45950;
+    margin-bottom: 5%;
+    color: #E6E6E6;
+}
+
+/**radio buttons **/
+.radio-buttons {
+    font-size: 18px;
+    margin: 0 20%;
+    color: #E6E6E6;
+}
+
+.radio-buttons input {
+    margin-bottom: 6%;  
+}
+
+
+
+    @media only screen and (min-width : 0px) {
+    }
+
+   /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+    @media only screen and (min-width : 580px) {
+    }
+
+
+    @media only screen and (min-width : 650px) {
+    }
+
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) { 
+
+    }
+
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    .dropdown-menu-lists {
+        margin-bottom: 3%;
+    }
+        
+    .radio-buttons input {
+      margin-bottom: 4%;  
+    }
+
+    /**check box's **/
+    label, input {
+        margin-bottom: 3%;
+    }
+
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
